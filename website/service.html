@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+    
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+    <header>
+        <h1 style="text-align: center;">Our Hospital Services</h1>
+    </header>
+    
+    <main class="contenttabout">
+        <section>
+            <h2>Emergency Care</h2>
+            <p>Our emergency department is equipped to handle medical emergencies 24/7, staffed by experienced physicians and nurses ready to provide prompt and efficient care.</p>
+        </section>
+
+        <section>
+            <h2>Inpatient and Outpatient Services</h2>
+            <p>Whether you require a short stay for observation or a more extended hospitalization, our inpatient units offer comfortable accommodations and attentive care. Additionally, our outpatient services provide convenient access to diagnostic tests, treatments, and consultations without the need for an overnight stay.</p>
+        </section>
+
+        <section>
+            <h2>Diagnostic Imaging</h2>
+            <p>Our advanced imaging facilities include MRI, CT scan, X-ray, ultrasound, and mammography services, enabling accurate and timely diagnosis of various medical conditions.</p>
+        </section>
+
+        <section>
+            <h2>Surgical Suites</h2>
+            <p>Our modern operating rooms are equipped with cutting-edge technology and staffed by skilled surgeons, anesthesiologists, and support staff to perform a wide range of surgical procedures safely and efficiently.</p>
+        </section>
+
+        <section>
+            <h2>Intensive Care Units (ICU)</h2>
+            <p>For patients requiring specialized monitoring and care, our intensive care units are staffed by highly trained healthcare professionals skilled in managing critical conditions.</p>
+        </section>
+
+        <section>
+            <h2>Laboratory Services</h2>
+            <p>Our onsite laboratory is equipped with the latest instrumentation to perform a comprehensive range of diagnostic tests, ensuring rapid and accurate results for our patients.</p>
+            
+        </section>
+
+        <section>
+            <h2>Pharmacy Services</h2>
+            <p>Our pharmacy provides a full range of medications and pharmaceutical services, including medication counseling, to ensure safe and effective treatment for our patients.</p>
+        </section>
+
+        <section>
+            <h2>Rehabilitation Services</h2>
+            <p>Our rehabilitation department offers physical therapy, occupational therapy, and speech therapy services to help patients regain function and independence following injury, illness, or surgery.</p>
+        </section>
+
+        <section>
+            <h2>Maternity and Neonatal Care</h2>
+            <p>Our maternity ward provides comprehensive care for expectant mothers and newborns, including prenatal care, labor and delivery services, and postpartum support.</p>
+        </section>
+
+        <section>
+            <h2>Specialty Clinics</h2>
+            <p>We offer a variety of specialty clinics staffed by expert physicians, including cardiology, oncology, orthopedics, neurology, gastroenterology, and more, to address a wide range of medical needs.</p>
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const navLinks = document.querySelector('.nav-links');
+    
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active1');
+        });
+    
+   
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const paragraphs = document.querySelectorAll('p');
+            paragraphs.forEach(paragraph => {
+                const breakElement = document.createElement('br');
+                paragraph.parentNode.insertBefore(breakElement, paragraph.nextSibling);
+            });
+        });
+    </script>
+</body>
+
+<footer class="footer">
+    <p>&copy; 2024 Your Company Name.
+         All rights reserved. | Designed by
+          <a href="https://example.com">Your Name</a></p>
+  </footer>
+</html>
+     

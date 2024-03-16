@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+.toggle-btn {
+    display: none;
+    cursor: pointer;
+}
+.toggle-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .toggle-btn {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+    .nav-links.active1 {
+        display: flex;
+    }
+}
+
+.Header{
+    background-image: url("https://c0.wallpaperflare.com/preview/77/506/328/medical-health-doctor.jpg");
+    background-position: center;
+    height: 90vh;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer {
+      position: relative;
+    }
+  }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    grid-gap: 20px; /* Add some gap between grid items */
+}
+
+.grid-item {
+    
+    padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the grid a single column */
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column */
+    }
+}
+
+.contenttabout{
+    padding: 20px;
+}
+
+#btncontact{
+    background: rgb(44, 42, 42);
+    color: white;
+    padding: 10px;
+    width: 80px;
+    border-radius: 10px;
+}

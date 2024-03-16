@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+    
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+    <h1 style="padding-left: 10px;">Contact Us</h1>
+    
+    <form action="#" method="POST" style="padding: 20px;">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit" id="btncontact">
+    </form>
+
+    <p style="padding: 10px;">You can also reach us at: your-email@example.com</p>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const navLinks = document.querySelector('.nav-links');
+    
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active1');
+        });
+    </script>
+</body>
+
+<footer class="footer">
+    <p>&copy; 2024 Your Company Name.
+         All rights reserved. | Designed by
+          <a href="https://example.com">Your Name</a></p>
+  </footer>
+
+
+</html>

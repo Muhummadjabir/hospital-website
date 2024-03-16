@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+    
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </nav>
+     
+    <header>
+        <h1 style="text-align: center;">Welcome to Our Hospital</h1>
+    </header>
+    <div class="contenttabout">
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>At <strong>Our Hospital</strong>, we are dedicated to providing exceptional healthcare services to our community. With a team of skilled healthcare professionals and state-of-the-art facilities, we strive to ensure the well-being and comfort of all our patients.</p>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <ul>
+                <li>Emergency Care</li>
+                <li>Inpatient and Outpatient Services</li>
+                <li>Diagnostic Imaging</li>
+                <li>Surgical Suites</li>
+                <li>Intensive Care Units (ICU)</li>
+                <li>Laboratory Services</li>
+                <li>Pharmacy Services</li>
+                <li>Rehabilitation Services</li>
+                <li>Maternity and Neonatal Care</li>
+                <li>Specialty Clinics</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Our Mission</h2>
+            <p>Our mission is to provide compassionate, high-quality healthcare services that meet the needs of our patients and exceed their expectations. We are committed to promoting health, preventing illness, and improving the quality of life for all those we serve.</p>
+        </section>
+    </main>
+</div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const navLinks = document.querySelector('.nav-links');
+    
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active1');
+        });
+    </script>
+</body>
+<footer class="footer">
+    <p>&copy; 2024 Your Company Name.
+         All rights reserved. | Designed by
+          <a href="https://example.com">Your Name</a></p>
+  </footer>
+
+  <!-- Footer Section End-->
+</html>
